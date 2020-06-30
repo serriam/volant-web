@@ -33,55 +33,335 @@
 
     @@include('./_navigation.html', {
         "path": "./front",
-        "logo_classes": "d-none",
         "cta_button_classes": "d-lg-none",
         "path_common": ".",
-        "classes": "navbar-light navbar-theme-danger"
+        "classes": "navbar-light navbar-theme-volant"
     })
 
     <main>
 
-        @@include('./_preloader.html', {
-            "path": "../"
-        }) 
-        <!-- owl carousel section -->
+        <!-- <div class="preloader bg-soft flex-column justify-content-center align-items-center">
+            <div class="loader-element">
+                <span class="loader-animated-dot"></span>
+                <img src="./front/assets/img/brand/dark.svg" height="150" alt="volant logo">
+            </div>
+        </div> -->
+       
+        <section class="section pb-2 pb-lg-5 bg-white line-bottom-light">
 
-        <!-- Hero -->
-        <section class="section pb-2 pb-lg-5 bg-gradient-white">
+            <!-- start carousel   -->
+            <div class="vol-slide">
+            
+            <!-- carousel slide -->
+            <div id="carousel-capt" class="carousel slide carousel-fade" data-ride="carousel">
+            
+            <!-- slider indicator -->
+            <ol class="carousel-indicators">
+                <li data-target="carousel-capt" data-slide-to="0" class="active"></li>
+                <li data-target="carousel-capt" data-slide-to="1"></li>
+                <li data-target="carousel-capt" data-slide-to="2"></li>
+            <!-- end Slider indicator list -->
+            </ol>
+
+            <!-- carousel Inner elements -->
+            <div class="carousel-inner">
+
+            <!-- KE background text area -->
+            <div class="subtitle-vol align-right" style="font-size: 84px;">
+                KE
+            </div>
+            <!-- end background text area -->
+
+            <!-- carousel-item to volant info container -->
+            <div class="carousel-item active">
+
+            <!-- info container volant -->
             <div class="container">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-12 col-md-6 mt-2 order-2 order-lg-1">
-                    <img src="./front/assets/img/illustrations/Volant-landing-1-01.svg" alt="volant landing">
+                    <div class="col-12 col-md-6 mt-2 order-2 pl-5 order-lg-1" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" style="opacity: 1; transform: translate(0px 0px); touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgb(0, 0, 0);">
+                    <img src="./front/assets/img/illustrations/bike-delivery.gif" alt="volant landing" width="400px" class="d-block w-100">
+                        <!-- slick slider area -->
+
+                       
+                            
+                           <!-- end slick slider  -->
                     </div>
-                    <div class="col-12 col-md-5 order-1 order-lg-2">
-                          <h1 class="display-1 mb-3 font-weight-extreme text-black">Welcome to Volant Ltd, made for you</h1>
-                          <p class="lead align-content-centern font-weight-600">A lifestyle app with all supply chain solutions available easily through our smartphone app and Web app</p>
+                    <div class="col-12 col-md-5 order-1 order-lg-2 ml--5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+                            
+                          <h1 class="display-1 mb-3 font-weight-extreme text-black" style="font-size: 45px; opacity: 1; transform: translate(0px 0px) !important; touch-action: pan-y !important; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgb(0, 0, 0);" >Welcome to <br/> Volant Ltd, <br/> made for you</h1>
+                          <p class="align-content-centern font-weight-600">A lifestyle app with all supply chain solutions available easily through our smartphone app and Web app</p>
+                      
                           <div class="mt-3 align-content-center center">
-                            <button class="btn btn-danger" type="submit">Deliver with us</button> &nbsp; &nbsp;
-                            <button class="btn btn-danger" type="submit">Drive with Volant</button>
-                          </div>
+                            <br/><br/>
+
+                            <ul class="vollant">
+                            <li class="voli" id="volant"></li>
+                            <li class="voli" id="vollary"></li>
+                            <li class="voli" id="volportals"></li>
+                            
+
+                        </ul>
+                            <button class="btn btn-volant btn-block" type="submit">Deliver with us</button> <br/> <br/>
+
+                            <button class="btn btn-volant btn-block" type="submit">Drive with Volant</button>
+                          
+                       
+                        </div>
+
+                         
+                    </div>
                       </div>
+
+                      
+                </div>
+            
+                <!-- end first carousel item -->
+            </div>
+
+            <!-- carousel-item-2  to volant info container -->
+            <div class="carousel-item ">
+
+                <!-- info container volant -->
+                <div class="container">
+                    <div class="row justify-content-between align-items-center bg-white">
+                        
+                        <div class="col-12 col-md-5 order-1 order-lg-2 ml--5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2000">
+                                
+                              <h1 class="display-1 mb-3 font-weight-extreme text-black" style="font-size: 45px; opacity: 1; transform: translate(0px 0px) !important; touch-action: pan-y !important; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgb(0, 0, 0);" >
+                                Join the  <br/> Big Volant, <br/> delivery network
+                            </h1>
+                              <p class="align-content-centern font-weight-600">Best delivery experience from volant fleet services</p>
+                          
+                              <div class="mt-3 align-content-center center">
+                                <br/><br/>
+    
+                                <ul class="vollant">
+                                <li class="voli" id="volant"></li>
+                                <li class="voli" id="vollary"></li>
+                                <li class="voli" id="volportals"></li>
+                                
+    
+                            </ul>
+                                <button class="btn btn-volant btn-block" type="submit">Become an Associate</button>
+                              
+                           
+                            </div>
+    
+                             
+                        </div>
+                        <div class="col-12 col-md-6 mt-2 order-2 pl-5 order-lg-1" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" style="opacity: 1; transform: translate(0px 0px); touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgb(0, 0, 0);">
+                            <img src="./front/assets/img/illustrations/volant-associate.gif" alt="volant landing" class="d-block w-100">
+                                <!-- slick slider area -->
+        
+                               
+                                    
+                                   <!-- end slick slider  -->
+                            </div>
+                          </div>
+    
+                          
+                    </div>
+                
+                    <!-- end first carousel item -->
+                </div>
+           <!-- end carousel inner elements -->
+
+           
+       <!-- end carousel inner elements -->
+            </div>
+           <!-- end carousel slide -->
+           <a class="carousel-control-prev" href="#carousel-capt" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-capt" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!-- end indicators -->
+            </div>
+            <!-- end vol-slide -->
+             </div>
+
+                <!-- div vol lines -->
+            <div class="vol-holines">
+                <div class="container full-height">
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
                 </div>
             </div>
-            <div class="vector-holder hero-shape" data-aos="fade-right" data-aos-once="true"><img src="./front/assets/img/illustrations/path-1-01.svg" alt="vector holder"></div>
-        </section>
+            <!-- end vol- lines -->
+           </section>
+           <div class="clearfix"></div>
+           
 
-        <section class="section pb-8 pb-lg-12 mb-0 mb-lg-3 bg-gradient-soft text-white">
+           <section class="section">
+               <div class="container">
+                <div class="row justify-content-center border-light">
+                    <div class="col-12 text-center mb-1 mt-0 line-bottom-light">
+                        <h2 class="display-3 mb-4 font-weight-extreme feature-title">Trusted by companies that love speed</h2>
+                        <p class="lead mb-5 text-volant">Join the network of <span class="font-weight-bolder">100,000+</span> volant clients</p>
+                        <a href="#" class="icon icon-lg text-gray mr-3">
+                            <i class="fab fa-mailchimp"></i>
+                        </a>
+                        <a href="#" class="icon icon-lg text-gray mr-3">
+                            <i class="fab fa-cpanel"></i>
+                        </a>
+                        <a href="#" class="icon icon-lg text-gray mr-3">
+                            <i class="fab fa-dhl"></i>
+                        </a>
+                        <a href="#" class="icon icon-lg text-gray mr-3 ">
+                            <i class="fab fa-github-alt"></i>
+                        </a>
+                        <a href="#" class="icon icon-lg text-gray mr-3">
+                            <i class="fab fa-aws"></i>
+                        </a>
+                        <a href="#" class="icon icon-lg text-gray">
+                            <i class="fab fa-node"></i>
+                        </a>
+                    </div>
+               </div>
+           </section>
+
+        <section class="bg-soft mt-5 pt-50">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4 ">
+                  <div class="info-wrapper">
+                      <div class="paragraph-wrapper">
+                  <h4 class="feature-title align-content-center" data-aos="fade-down" data-aos-duration="1500" data-aos-easing="linear">
+                      <span style="display: inline-block; opacity: 1; visibility: inherit; transform: translate(0px 0px);"> Leading</span> in every logistical <br/> need your company wants
+                  </h4>
+
+                  <p style="transform: translate(0px 40px);" data-aos="fade-up" data-aos-duration="3000" data-aos-easing="linear">
+                      Handling an SME, or a company with higher fleet needs- we give you the option to be in control
+                      of what scale and size of service to select from volant 
+                  </p>
+
+                  <button class="vol-btn-play">
+                      <div class="vol-btn-play-indc">
+                        <svg id="Capa_1" class="vol-svg-play" height="22" viewBox="0 0 22 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m437.02 74.98c-48.353-48.351-112.64-74.98-181.02-74.98s-132.667 26.629-181.02 74.98c-48.351 48.353-74.98 112.64-74.98 181.02s26.629 132.667 74.98 181.02c48.353 48.351 112.64 74.98 181.02 74.98s132.667-26.629 181.02-74.98c48.351-48.353 74.98-112.64 74.98-181.02s-26.629-132.667-74.98-181.02zm-181.02 407.02c-124.617 0-226-101.383-226-226s101.383-226 226-226 226 101.383 226 226-101.383 226-226 226z"/><path d="m374.782 243.84-180-130c-4.566-3.298-10.596-3.759-15.611-1.195s-8.171 7.722-8.171 13.355v260c0 5.633 3.156 10.791 8.171 13.355 2.154 1.102 4.495 1.645 6.827 1.645 3.097 0 6.179-.958 8.784-2.84l180-130c3.904-2.82 6.218-7.344 6.218-12.16s-2.312-9.34-6.218-12.16zm-173.782 112.824v-201.328l139.381 100.664z"/>
+                            <path d="M0 0l15.938 9.107L0 18.214V0zm1.5 15.63l11.414-6.523L1.5 2.585V15.63z" fill="#A31722" fill-rule="nonzero"></path>
+                        </svg>
+                        <div class="vol-svg-circle">
+                            <svg width="92" height="92" viewBox="0 0 92 92">
+                                <circle cx="46" cy="46" r="45" fill="none" stroke="#A31729" stroke-width="1.5"></circle>
+                            </svg>
+                        </div>
+                      </div>
+                      <span class="span-vol-vid-btn"> Take a look how it works</span>
+                  </button>
+                  <ul class="vollant" style="opacity: 0.3;">
+                      <li class="voli" id="volant"></li>
+                      <li class="voli" id="metro"></li>
+                      <li class="voli" id="asyle"></li>
+                      <li class="voli" id="vollary"></li>
+                      <li class="voli" id="volportals"></li>
+                      <li class="voli" id="volant"></li>
+                      <li class="voli" id="metro"></li>
+                      <li class="voli" id="asyle"></li>
+                      <li class="voli" id="vollary"></li>
+                      <li class="voli" id="volportals"></li>
+                  </ul>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                          <ol class="feature-ol feature-ol-cus">
+                              <li class="feature-li-cus feature-li">
+                                  <div class="feature-hid" style="position: relative; overflow: hidden;">
+                                    <div aria-hidden="true" style="width: 100%; padding-bottom: 37%;">
+                                        <picture>
+                                            <source srcset="./front/assets/img/illustrations/truck-volant.png 241w" sizes="(max-width:961px) 100vw, 961px">
+                                            <img alt loading="lazy" style="position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                            object-position: center center;
+                                            opacity: 1;
+                                            transition: opacity 500ms ease 0s;" sizes="(max-width:961px) 100vw, 961px" srcset="./front/assets/img/illustrations/truck-volant.png 241w">
+                                        </picture>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="feature-alink">
+                                      <h3 class="feature-h3-cus font-weight-extreme">
+                                          Volant Metro
+                                      </h3>
+                                  </a>
+                              </li>
+                              <li class="feature-li-cus feature-li">
+                                <div class="feature-hid" style="position: relative; overflow: hidden;">
+                                  <div aria-hidden="true" style="width: 100%; padding-bottom: 37%;">
+                                      <picture>
+                                          <source srcset="./front/assets/img/illustrations/for-design.jpg" sizes="(max-width:940px) 100vw, 961px">
+                                          <img src="./front/assets/img/illustrations/for-design.jpg" alt loading="lazy" class="volimg">
+                                      </picture>
+                                  </div>
+                                </div>
+                                <a href="#" class="feature-alink">
+                                    <h3 class="feature-h3-cus font-weight-extreme">
+                                        Volant upcountry
+                                    </h3>
+                                </a>
+                            </li>
+                            <li class="feature-li-cus feature-li">
+                                <div class="feature-hid" style="position: relative; overflow: hidden;">
+                                  <div style="width: 100%; padding-bottom: 37%;">
+                                      <picture>
+                                          <source srcset="./front/assets/img/illustrations/volant-info.png" sizes="(max-width:961px) 100vw, 961px">
+                                          <img src="./front/assets/img/illustrations/volant-info.png" alt loading="lazy" class="volimg">
+                                      </picture>
+                                  </div>
+                                </div>
+                                <a href="#" class="feature-alink">
+                                    <h3 class="feature-h3-cus font-weight-extreme">
+                                        Volant Movers
+                                    </h3>
+                                </a>
+                            </li>
+                            <li class="feature-li-cus feature-li">
+                                <div class="feature-hid" style="position: relative; overflow: hidden;">
+                                  <div style="width: 100%; padding-bottom: 37%;">
+                                      <picture>
+                                          <source srcset="./front/assets/img/illustrations/volant-delivery.gif" sizes="(max-width:961px) 100vw, 961px">
+                                          <img src="./front/assets/img/illustrations/volant-delivery.gif" alt loading="lazy" class="volimg">
+                                      </picture>
+                                  </div>
+                                </div>
+                                <a href="#" class="feature-alink">
+                                    <h3 class="feature-h3-cus font-weight-extreme">
+                                        Construction Logistics
+                                    </h3>
+                                </a>
+                            </li>
+                          </ol>
+                        </div>
+                    </div>      
+          </div>  
+        </section>
+        <section class="section pb-8 pb-lg-12 mb-0 mb-lg-3 bg-volant text-white" >
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-8 mb-1 mb-sm-4 text-center">
-                        <h1 class="display-2  text-black font-weight-bold">Our simple Service</h1>
-                        <h5 class="text-black-50">We take your requests and handle all the delivery logistics. You are always one click away from a succesful delivery</h5>
+                    <div class="col-12 col-md-8 mb-1 mb-sm-4 text-center line-bottom-white" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
+                        <h1 class="display-1 text-white font-weight-extreme" style="font-family: 'averta';">Our simple Service</h1>
+                        <h5 class="text-white-50">We take your requests and handle all the delivery logistics. You are always one click away from a succesful delivery</h5>
                     </div>
                 </div>
-            </div>
+                </div>
             <div class="pattern bottom"></div>
         </section>
-        <section class="section section-lg pb-0 mb-0">
+        <section class="section section-lg pb-0 mb-0 line-bottom-soft">
             <div class="container mt-n9 mt-lg-n13 z-4">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-4">
-                        <div class="card shadow-soft bg-white border-light animate-up-3 text-gray py-4 mb-5 mb-lg-0">
+                        <div class="card shadow-soft bg-white border-light animate-up-3 text-gray py-4 mb-5 mb-lg-0"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
                             <div class="card-header text-center pb-0">
                                 <div class="icon icon-shape icon-shape-danger rounded-circle mb-3">
                                     <i class="fa fa-shopping-cart text-white"></i>
@@ -122,7 +402,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                        <div class="card shadow-soft bg-white border-light animate-up-3 text-gray py-4 mb-5 mb-lg-0">
+                        <div class="card shadow-soft bg-white border-light animate-up-3 text-gray py-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                             <div class="card-header text-center pb-0">
                                 <div class="icon icon-shape icon-shape-danger rounded-circle mb-3">
                                     <i class="far fa-lightbulb"></i>
@@ -162,8 +442,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="card shadow-soft bg-white border-light animate-up-3 text-gray py-4 mb-5 mb-lg-0">
+                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
+                        <div class="card shadow-soft bg-white border-light animate-up-3 text-gray py-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
                             <div class="card-header text-center pb-0">
                                 <div class="icon icon-shape icon-shape-danger rounded-circle mb-3">
                                     <i class="fa fa-cog"></i>
@@ -199,69 +479,162 @@
                     </div>
                 </div>
             </div>
+
         </section>
         <section class="section section-lg line-bottom-soft">
             <div class="container">
-                <div class="row row-grid align-items-center mb-5 mb-md-7">
-                    <div class="col-12 col-md-5">
+                <div class="row row-grid align-items-center mb-3 mb-md-5">
+                    <div class="col-12 col-md-5 line-bottom-light" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000">
                         <h4 class="Lead">Associates</h4>
                         <h2 class="display-1 font-weight-extreme mb-4">Become an associate</h2>
                         <p class="black-text-50">Whether you are a single track owner or full fleet manager, work with the great volant network today. Link your fleet with a great logistical network across East Africa</p>
-                        <a href="./about.html" class="btn btn-primary mt-3 animate-up-2">
+                        <a href="./about.html" class="btn btn-volant mt-3 animate-up-2">
                             Learn More
                             <span class="icon icon-xs ml-2">
                                 <i class="fas fa-external-link-alt"></i>
                             </span>
                         </a>
                     </div>
-                    <div class="col-12 col-md-6 ml-md-auto">
-                        <img src="./front/assets/img/illustrations/volant-services.png" alt="">
+                    <div class="col-12 col-md-6 ml-md-auto" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2000">
+                        <img src="./front/assets/img/illustrations/skater-person.gif" alt="bike-transparent">
                     </div>
                 </div>
             </div>
+            <div class="vol-holines">
+            <div class="container full-height">
+                <div class="line-item"></div>
+                <div class="line-item"></div>
+                <div class="line-item"></div>
+                <div class="line-item"></div>
+            </div>
+        </div>
         </section>
-        
-        <section class="section section-lg bg-danger">
+        <section class="section section-lg bg-soft">
             <div class="container">
-                <div class="row justify-content-center text-center text-white mb-5">
+                <div class="row justify-content-center text-center text-black mb-5">
                     <div class="col-12">
-                        <h2 class="h1 font-weight-light mb-3">Less <span class="font-weight-bold">work</span>, more <span class="font-weight-bold">flow</span>.</h2>
-                        <p class="lead px-lg-8">
-                            Boost productivity with BrowserSync. Sass changes are reflected instantly and pages scroll and refresh on devices as you work.
+                        <h2 class="h1 font-weight-light text-black-50 mb-3">Focus on  <span class="font-weight-bold">the important</span>, we'll focus <span class="font-weight-bold">on the delivery</span>.</h2>
+                        <p class="lead px-lg-8 text-black-50">
+                            The three easy step of becoming a volant client. made with minimal complexity
                         </p>
                     </div>
                 </div>
                 <div class="row justify-content-center mb-6">
-                    <div class="col-md-10 col-xl-9">
-                        <div class="position-relative">
-                            <div class="rounded bg-white p-4 text-dark mb-2">
-                                <div class="mb-3">
-                                    <div class="font-weight-normal">&gt; $ npm install</div>
-                                    <div class="text-secondary">Everything’s installed!</div>
-                                </div>
-                                <div class="mb-3">
-                                    <div class="font-weight-normal">&gt; $ gulp</div>
-                                    <div class="text-secondary">SCSS watching</div>
-                                    <div class="text-secondary">LiveReload started</div>
-                                    <div class="text-secondary">Opening localhost:3000</div>
-                                </div>
-                                <div>
-                                    <div class="font-weight-normal">&gt; $ that's it?</div>
-                                    <div class="text-secondary">It's that simple!</div>
-                                </div>
-                            </div>
+                    <div class="col-12 text-center mb-3">
+                        <p class="text-white-50"><strong>We accept</strong><span class="border-right border-variant-white mx-2"></span>all global payment <strong>methods</strong></p>
+                    </div>
+                    <div class="col-12 text-white-50 text-center mb-5">
+                        <div class="icon icon-lg mr-2 mr-sm-3">
+                            <i class="fab fa-cc-visa"></i>
                         </div>
-                        <p class="mt-4 text-white text-center">Looks unfamiliar? Don’t worry! Our <a class="text-white text-underline font-weight-bold" href="https://demos.creative-tim.com/impact-design-system-pro/docs/getting-started/quick-start/">documentation</a> has got you covered.</p>
+                        <div class="icon icon-lg mr-2 mr-sm-3">
+                            <i class="fab fa-cc-mastercard"></i>
+                        </div>
+                        <div class="icon icon-lg mr-2 mr-sm-3">
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        @@include('./_demo.html', {
-            "path": "./front",
-            "classes": "bg-primary text-white"
-        })
-
+        <section class="section section-lg bg-soft line-bottom-light">
+            <div class="container">
+                <div class="row justify-content-center mb-4 mb-lg-6">
+                    <div class="col-12 col-lg-8 text-center">
+                        <h1 class="display-3 mb-4">Frequently asked questions</h1>
+                        <p class="lead text-gray">Here is what you need to know about volant dedicated ecosystem. What our clients and associates ask frequently</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <!--Accordion-->
+                        <div class="accordion">
+                            <div class="card card-sm card-body border border-light rounded mb-3">
+                                <div data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                                    <span class="h6 mb-0">How do I become a volant Associate?</span>
+                                    <span class="icon"><i class="fas fa-angle-down"></i></span>
+                                </div>
+                                <div class="collapse" id="panel-1">
+                                    <div class="pt-3">
+                                        <p class="mb-0">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure iste obcaecati. Enim, molestiae! Cumque, adipisci. Accusantium sint amet explicabo mollitia repudiandae quis reiciendis fugiat, quae recusandae dolores nesciunt modi.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-sm card-body border border-light rounded mb-3">
+                                <div data-target="#panel-2" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-2">
+                                    <span class="h6 mb-0">How do I make an order with Volant?</span>
+                                    <span class="icon"><i class="fas fa-angle-down"></i></span>
+                                </div>
+                                <div class="collapse" id="panel-2">
+                                    <div class="pt-3">
+                                        <p class="mb-0">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quod magnam nostrum quis rem debitis facilis eveniet excepturi obcaecati quas nemo optio, consectetur sapiente tempore reprehenderit architecto doloribus numquam atque.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-sm card-body border border-light rounded mb-3">
+                                <div data-target="#panel-3" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-3">
+                                    <span class="h6 mb-0">How long does it take for volant to make a delivery after I place a delivery order?</span>
+                                    <span class="icon"><i class="fas fa-angle-down"></i></span>
+                                </div>
+                                <div class="collapse" id="panel-3">
+                                    <div class="pt-3">
+                                        <p class="mb-0">
+                                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis iure cum explicabo animi ea repellat odio aperiam fuga? Facere exercitationem accusamus eum harum enim itaque officiis deleniti rem? Molestiae, officia?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-sm card-body border border-light rounded mb-3">
+                                <div data-target="#panel-4" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-4">
+                                    <span class="h6 mb-0">What type of delivery services does Volant offer to its customers?</span>
+                                    <span class="icon"><i class="fas fa-angle-down"></i></span>
+                                </div>
+                                <div class="collapse" id="panel-4">
+                                    <div class="pt-3">
+                                        <p class="mb-0">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore nostrum debitis quasi perspiciatis quod ipsam tempore fugit repellat quaerat vero possimus veritatis fugiat culpa, id, repudiandae, vel obcaecati laboriosam porro!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-sm card-body border border-light rounded mb-3">
+                                <div data-target="#panel-5" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-5">
+                                    <span class="h6 mb-0">Where can I find the End User License Agreement (EULA)?</span>
+                                    <span class="icon"><i class="fas fa-angle-down"></i></span>
+                                </div>
+                                <div class="collapse" id="panel-5">
+                                    <div class="pt-3">
+                                        <p class="mb-0">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum pariatur officiis tenetur, nam tempora molestias maiores iusto voluptas repellendus saepe unde sapiente nesciunt fugiat itaque beatae perferendis, exercitationem earum nemo!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5 mt-lg-6">
+                                <div class="col text-center">
+                                    <a href="#" class="btn btn-volant animate-up-2"><span class="mr-2"><i class="fas fa-question-circle"></i></span> Not finding what I need</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of Accordion-->
+                    </div>
+                </div>
+            </div>
+            <div class="vol-holines">
+                <div class="container full-height">
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                    <div class="line-item"></div>
+                </div>
+            </div>
+        </section>
         @@include('./_footer.html', {
             "path": "./front",
             "path_common": ".",

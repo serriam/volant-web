@@ -52,6 +52,7 @@ const paths = {
             css: './src/front/css',
             html: './src/front/pages/**/*.html',
             assets: './src/front/assets/**/*.*',
+            plugins: './src/front/plugins/**/*.*',
             partials: './src/front/partials',
             scss: './src/front/scss',
         },

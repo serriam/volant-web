@@ -22,13 +22,8 @@ function initVolant(){
 
 $('.carousel').carousel({
   interval: 5000,
+});
+
+$('#slidegallery').carousel({
+  interval: 2000,
 })
-
-// $('.carousel').on('slid.bs.carousel', function (e){
-//   $('.carousel').carousel(2)
-// })
-
-// $('.carousel').carousel(0)
-// $('.carousel').carousel(1)
-// $('.carousel').carousel(2)
-// init owl carousel
